@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block body %}
+    <h2>Article list</h2>
+    {{ comments }}
+    {% for article in object_list %}
+        <div>{{ article.title }}</div>
+        <div>{{ article.category }}</div>
+    {% endfor %}
+
+{% endblock %}
