@@ -87,7 +87,7 @@ DATABASES = {
         'PORT': env('PG_PORT'),
         'PASSWORD': env('PG_PASSWORD'),
         'USER': env('PG_USER'),
-        'HOST': env('PG_HOST'),
+        'HOST': 'db',
     }
 }
 
